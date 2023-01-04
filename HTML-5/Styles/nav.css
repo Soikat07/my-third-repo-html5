@@ -1,6 +1,8 @@
 /* parent ke amara sob somoy display flex korbo ar child er display inline */
+/* nav faka ul bolte bujhay j nav er vitore joto ul ache sobar display flex korte */
+/* nav>ul bolte bujhay j nav er vitore j child ache tader dislplay flex korte orthat sudu immidiate li gulo... ekhane kono li er vitore notun ul thakle tar vitore kaj korbe na */
 
-nav{
+nav>ul{
      display: flex;
 }
 li{
@@ -9,10 +11,21 @@ li{
  padding:0 5px;
 }
 nav li:hover{
+     /* border: 2px solid gray; */
      background-color: lightgray;
      color: gray;
 }
 nav li a{
      text-decoration: none;
      color: black;
+}
+/* Nested menu */
+nav li #dropdown{
+     display: none;
+     background-color: lightskyblue;
+     position: absolute;
+     padding-left: 5px;
+}
+nav li:hover > #dropdown{
+     display: block;
 }

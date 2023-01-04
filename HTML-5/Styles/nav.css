@@ -9,7 +9,6 @@ li{
  padding:0 5px;
 }
 nav li:hover{
-     /* border: 2px solid gray; */
      background-color: lightgray;
      color: gray;
 }

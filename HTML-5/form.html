@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>HTML Forms</title>
+     <style>
+          label{
+          display: block;
+          margin-top: 10px;
+          }
+     </style>
+</head>
+<body>
+     <h2>Rahim er Ma er Pithar Dokan</h2>
+     <form action="backend.php">
+          <label for="name">
+           Name:<input id="name" type="text" placeholder="Your name">
+          </label>
+          <label for="email">
+               Email:<input id="email" type="email" placeholder="Your email">
+          </label>
+          <label for="mobile">Number
+               <input id="mobile" type="number" placeholder="Your number" >
+          </label>
+<fieldset>
+     <legend>Pick one Pitha</legend>
+     <label for="Chitoy">
+          Chitoy<input type="radio" name="pitha" id="Chitoy">
+     </label>
+     <label for="Vapa">
+          Vapa<input type="radio" name="pitha" id="Vapa">
+     </label>
+     <label for="Dim Chitoy">
+           Dim Chitoy<input type="radio" name="pitha" id=" Dim Chitoy">
+     </label>
+</fieldset>
+<fieldset>
+     <legend>Select Vortas</legend>
+     <label for="Dhoniya">Dhoniya vorta
+ <input type="checkbox" name="vorta" id="Dhoniya">
+     </label>
+     <label for="sorisa">Sorisa 
+          <input type="checkbox" name="vorta" id="sorisa">
+     </label>
+     <label for="begun">Begun vorta
+          <input type="checkbox" name="vorta" id="begun">
+     </label>
+     <label for="piyaj">Piyaj vorta
+          <input type="checkbox" name="vorta" id="piyaj">
+     </label>
+</fieldset>
+<fieldset>
+     <legend>Special Suggestion</legend>
+     <label for="suggestion">
+          What kind do you want_
+         <textarea name="" id="suggestion" cols="30" rows="5"></textarea>
+     </label>
+</fieldset>
+<input type="reset"> <input type="submit">
+     </form>
+</body>
+</html>
